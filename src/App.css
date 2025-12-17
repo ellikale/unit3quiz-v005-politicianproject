@@ -1,9 +1,14 @@
 .app-shell {
   min-height: 100vh;
-  background: radial-gradient(circle at 20% 20%, rgba(124, 58, 237, 0.18), transparent 25%),
-    radial-gradient(circle at 80% 0%, rgba(14, 165, 233, 0.18), transparent 25%),
-    #0b1224;
-  color: #e2e8f0;
+  color: #2c0f23;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(255, 140, 201, 0.35), transparent 30%),
+    radial-gradient(circle at 80% 0%, rgba(255, 108, 164, 0.35), transparent 30%),
+    linear-gradient(135deg, #ffb6d5, #ffc4df 35%, #ffd8ea);
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ff3cac'%3E%3Cpath d='M7 7V6a5 5 0 1110 0v1h3v15H4V7h3zm2 0h6V6a3 3 0 00-6 0v1zm-3 2v11h12V9H6z'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 120px;
 }
 
 .hero {
@@ -11,18 +16,19 @@
   grid-template-columns: 2fr 1fr;
   gap: 2rem;
   padding: 2.5rem clamp(1.5rem, 4vw, 3.5rem);
-  background: linear-gradient(135deg, rgba(16, 24, 40, 0.92), rgba(12, 19, 38, 0.9));
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: linear-gradient(135deg, rgba(255, 99, 166, 0.9), rgba(255, 60, 150, 0.85));
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  color: #2c0f23;
 }
 
 .hero h1 {
   font-size: clamp(1.8rem, 3vw, 2.6rem);
   margin: 0.4rem 0;
-  color: #f8fafc;
+  color: #2c0f23;
 }
 
 .hero .lede {
-  color: #cbd5e1;
+  color: #3a1532;
   margin: 0.6rem 0 1rem;
 }
 
@@ -33,8 +39,8 @@
 }
 
 .stat-block {
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(255, 124, 181, 0.35);
   border-radius: 1rem;
   padding: 1.5rem;
   backdrop-filter: blur(8px);
@@ -43,16 +49,16 @@
 .stat-block h2 {
   margin: 0.25rem 0 0;
   font-size: 2.4rem;
-  color: #a5b4fc;
+  color: #d10f7b;
 }
 
 .stat-block p {
   margin: 0;
-  color: #cbd5e1;
+  color: #3a1532;
 }
 
 .stat-block.alt h2 {
-  color: #67e8f9;
+  color: #ff3cac;
 }
 
 .content {
@@ -63,11 +69,11 @@
 }
 
 .panel {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(255, 124, 181, 0.25);
   border-radius: 1.25rem;
   padding: 1.5rem;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 15px 40px rgba(209, 15, 123, 0.18);
 }
 
 .panel-header {
@@ -81,14 +87,14 @@
 
 .panel h3 {
   margin: 0.35rem 0 0;
-  color: #f8fafc;
+  color: #2c0f23;
 }
 
 .eyebrow {
   text-transform: uppercase;
   letter-spacing: 0.08em;
   font-size: 0.75rem;
-  color: #94a3b8;
+  color: #a43a71;
   margin: 0;
 }
 
@@ -108,15 +114,15 @@
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
-  color: #cbd5e1;
+  color: #2c0f23;
   font-size: 0.95rem;
 }
 
 .field input,
 .field select {
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  color: #e2e8f0;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(255, 124, 181, 0.35);
+  color: #2c0f23;
   padding: 0.75rem 0.9rem;
   border-radius: 0.75rem;
   outline: none;
@@ -125,8 +131,8 @@
 
 .field input:focus,
 .field select:focus {
-  border-color: #7c3aed;
-  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.25);
+  border-color: #ff3cac;
+  box-shadow: 0 0 0 3px rgba(255, 60, 172, 0.25);
 }
 
 .stat-grid {
@@ -136,26 +142,26 @@
 }
 
 .stat-card {
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(255, 124, 181, 0.3);
   border-radius: 1rem;
   padding: 1rem 1.2rem;
 }
 
 .stat-card p {
   margin: 0;
-  color: #94a3b8;
+  color: #a43a71;
   font-size: 0.9rem;
 }
 
 .stat-card h4 {
   margin: 0.35rem 0;
   font-size: 1.4rem;
-  color: #f8fafc;
+  color: #d10f7b;
 }
 
 .stat-card small {
-  color: #94a3b8;
+  color: #a43a71;
 }
 
 .chart-panel .chart-area {
@@ -163,14 +169,18 @@
 }
 
 .chart-area {
-  background: rgba(255, 255, 255, 0.02);
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(255, 124, 181, 0.3);
   border-radius: 1rem;
   padding: 1rem;
 }
 
 .muted {
-  color: #94a3b8;
+  color: #a43a71;
+}
+
+.source-note {
+  margin: 0.5rem 0 0;
 }
 
 .error {
@@ -179,7 +189,7 @@
 }
 
 .success {
-  color: #4ade80;
+  color: #16a34a;
   margin: 0.5rem 0;
 }
 
@@ -189,7 +199,7 @@
 
 .top-suppliers h4 {
   margin: 0 0 0.5rem;
-  color: #e2e8f0;
+  color: #2c0f23;
 }
 
 .pill-row {
@@ -204,15 +214,15 @@
   gap: 0.35rem;
   padding: 0.45rem 0.75rem;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  color: #cbd5e1;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(255, 124, 181, 0.35);
+  color: #a43a71;
   font-size: 0.85rem;
 }
 
 .pill.warning {
-  color: #fcd34d;
-  border-color: rgba(252, 211, 77, 0.45);
+  color: #f59e0b;
+  border-color: rgba(252, 211, 77, 0.65);
 }
 
 .tag-row {
@@ -225,9 +235,9 @@
   display: inline-flex;
   align-items: center;
   padding: 0.25rem 0.65rem;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  color: #cbd5e1;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(255, 124, 181, 0.35);
+  color: #a43a71;
   border-radius: 999px;
   font-size: 0.85rem;
 }
@@ -239,14 +249,14 @@
 }
 
 .support-card {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.07);
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(255, 124, 181, 0.3);
   border-radius: 1rem;
   padding: 1.25rem;
 }
 
 .support-card.secondary {
-  background: rgba(255, 255, 255, 0.02);
+  background: rgba(255, 255, 255, 0.88);
 }
 
 .support-header {
@@ -258,7 +268,7 @@
 
 .support-card h4 {
   margin: 0.35rem 0 0.75rem;
-  color: #f8fafc;
+  color: #2c0f23;
 }
 
 .form-grid {
@@ -274,20 +284,20 @@
 }
 
 button {
-  background: linear-gradient(135deg, #7c3aed, #6366f1);
-  color: #f8fafc;
+  background: linear-gradient(135deg, #ff3cac, #ff7096);
+  color: #2c0f23;
   border: none;
   border-radius: 0.85rem;
   padding: 0.8rem 1.1rem;
   font-weight: 600;
   cursor: pointer;
   transition: transform 0.12s ease, box-shadow 0.12s ease;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 124, 181, 0.45);
 }
 
 button:hover:not(:disabled) {
   transform: translateY(-1px);
-  box-shadow: 0 10px 20px rgba(99, 102, 241, 0.35);
+  box-shadow: 0 10px 20px rgba(255, 60, 172, 0.35);
 }
 
 button:disabled {
@@ -297,8 +307,8 @@ button:disabled {
 
 button.ghost {
   background: transparent;
-  border-color: rgba(255, 255, 255, 0.12);
-  color: #cbd5e1;
+  border-color: rgba(255, 124, 181, 0.5);
+  color: #a43a71;
 }
 
 button.small {
@@ -316,15 +326,56 @@ button.small {
 .status-list li {
   display: flex;
   justify-content: space-between;
-  color: #cbd5e1;
+  color: #2c0f23;
 }
 
 .status-list strong {
-  color: #f8fafc;
+  color: #d10f7b;
 }
 
 .pill.muted {
   opacity: 0.7;
+}
+
+.vote-card {
+  margin-top: 1.25rem;
+  padding: 1rem;
+  border-radius: 0.9rem;
+  border: 1px solid rgba(255, 124, 181, 0.35);
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.vote-header h5 {
+  margin: 0.2rem 0 0.35rem;
+  color: #2c0f23;
+}
+
+.vote-buttons {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin: 0.75rem 0;
+}
+
+.vote-buttons button.active {
+  box-shadow: 0 10px 20px rgba(255, 60, 172, 0.35);
+  border-color: rgba(255, 124, 181, 0.16);
+}
+
+.vote-stats {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+}
+
+.badge {
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(255, 124, 181, 0.35);
+  color: #a43a71;
+  font-size: 0.9rem;
 }
 
 @media (max-width: 920px) {

@@ -402,6 +402,12 @@ function App() {
               <Line data={chartData} options={chartOptions} aria-label="Monthly sales chart" />
             )}
           </div>
+          <p className="muted source-note">
+            Data source:{' '}
+            <a href="https://catalog.data.gov/dataset/warehouse-and-retail-sales" target="_blank" rel="noreferrer">
+              https://catalog.data.gov/dataset/warehouse-and-retail-sales
+            </a>
+          </p>
           <div className="top-suppliers">
             <h4>Top suppliers in this segment</h4>
             <div className="pill-row">
@@ -516,8 +522,7 @@ function App() {
                 </ul>
               ) : (
                 <p className="muted">
-                  Register or sign in to add your name in support of the Statement of Intent. Authentication uses your
-                  Firebase project keys (VITE_FIREBASE_*).
+                  Register or sign in to add your name in support of the Statement of Intent.
                 </p>
               )}
             </div>
